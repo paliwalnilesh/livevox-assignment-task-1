@@ -6,7 +6,7 @@ class TestA:
     asgname = ''
     region_name = ''
     
-    def test_verify_ASG_desire_running_count_is_same_as_running_instances(self):
+    def test_find_scheduled_actions_asg_and_elapsed_time_in_hh_mm_ss(self):
         ''' Find the Scheduled actions of the given ASG 
         which is going to run next and calculate elapsed in hh:mm: ss from the current time.'''
 
@@ -28,7 +28,7 @@ class TestA:
         action : action1time : 13:21:17.889035action : action2time : 14:11:17.889035'
         '''
 
-    def test_verify_ASG_desire_running_count_is_same_as_running_instances(self):
+    def test_calculate_total_instances_launched_and_terminated_on_the_current_day_asg(self):
         ''' Calculate the total number of instances launched and terminated on the current day for the given ASG. '''
 
         util = utils()
